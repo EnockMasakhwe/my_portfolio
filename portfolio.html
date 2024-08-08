@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="portfolio">
+        <div class="portfolio-container">
+            <h1>Checkout My Portfolio</h1>
+            <div class="filter-buttons">
+                <button class="pbtn filter-btn" onclick="filterProjects('all')">All Projects</button>
+                <button class="pbtn filter-btn" onclick="filterProjects('wordpress')">WordPress </button>
+                <button class="pbtn filter-btn" onclick="filterProjects('code')">Codes</button>
+            </div>
+            <div class="grid">
+                
+                <div class="grid-item code">
+                    <a href="https://enockmasakhwe.github.io/hci_web/index.html">
+                    <img src="Images/Real Madrid CF.png" alt="Project 2"></a>
+                    <h3>Real Madrid CF</h3>
+                    <p>This Real Madrid website offers a quick overview of the club's active players, detailing their origins and 
+                        positions, along with a summary of the trophies won by the team. It also includes a contact form for inquiries 
+                        and a link to the official Real Madrid website for further information.</p>
+                </div>
+                <div class="grid-item wordpress">
+                    <a href="https://eliarowp.lionlink.org/">
+                    <img src="Images/Startup Lions.png" alt="Project 3"></a>
+                    <h3>Startup Lions Hospitality</h3>
+                    <p>The Startup Lions Hospitality website showcases a unique facility located on the shores of Lake Turkana, 
+                        offering a range of services including a cafeteria, comfortable accommodation, and access to a serene sandy 
+                        beach. The site provides detailed information about the amenities and experiences available, designed to attract
+                         visitors seeking a relaxing and enriching stay by the lake.</p>
+                </div>
+                <div class="grid-item code">
+                    <a href="https://enockmasakhwe.github.io/bootcamp_class/">
+                    <img src="Images/Bootcamp class.png" alt="Project 4"></a>
+                    <h3>Learning Lions Bootcamp 4</h3>
+                    <p>The Learning Lions Bootcamp Training website provides comprehensive information about the program, detailing the 
+                        qualifications required for entry and the structured training modules offered. It serves as a resource for 
+                        prospective participants, outlining the skills and knowledge they will gain throughout the bootcamp, preparing 
+                        them for careers in the tech industry.</p>
+                </div>
+                <div class="grid-item wordpress">
+                    <a href="https://enock.hotelateker.com/">
+                    <img src="Images/Enock's shop.png" alt="Project 3"></a>
+                    <h3>Enock's Electricals and Electronics</h3>
+                    <p>Enock's Electricals and Electronics is an online WooCommerce shop designed to offer a seamless shopping 
+                        experience for customers. The website features a wide range of electronics, from laptops and phones to TVs and 
+                        accessories, catering to the needs of tech-savvy youths and comrades, providing them with convenient access 
+                        to the latest gadgets and devices.</p>
+                </div>
+                <div class="grid-item code">
+                    <img src="path/to/your/project-image.jpg" alt="Project 1">
+                    <h3>My Portfolio</h3>
+                    <p>My portfolio website is a comprehensive showcase of my skills and projects, highlighting my expertise in web
+                         development and design. It features detailed sections on my personal background, technical skills, education, 
+                         certifications, and a collection of my completed projects, providing a clear and organized presentation of my 
+                         capabilities and accomplishments.</p>
+                </div>
+                <div class="grid-item wordpress">
+                    <img src="path/to/your/project-image.jpg" alt="Project 1">
+                    <h3>Kenyan Organic Tea Company</h3>
+                    <p>The website for Kenyan Organic Tea showcases the company’s commitment to producing and selling high-quality, 
+                        organic teas. It provides detailed information about the company’s sustainable farming practices, ethical 
+                        production methods, and the rich heritage of Kenyan tea. Additionally, the site features a WooCommerce store, 
+                        offering a seamless shopping experience for customers to purchase a variety of organic tea products directly 
+                        online.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

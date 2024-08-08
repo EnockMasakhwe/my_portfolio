@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="test.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="testab.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="testpo.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="testco.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="portfolio">
+        <div class="portfolio-container">
+            <h1>Checkout My Portfolio</h1>
+            <div class="filter-buttons">
+                <button class="pbtn filter-btn" onclick="filterProjects('all')">All Projects</button>
+                <button class="pbtn filter-btn" onclick="filterProjects('wordpress')">WordPress </button>
+                <button class="pbtn filter-btn" onclick="filterProjects('code')">Codes</button>
+            </div>
+            <div class="grid">
+                
+                <div class="grid-item code">
+                    <a href="https://enockmasakhwe.github.io/hci_web/index.html">
+                    <img src="Images/Real Madrid CF.png" alt="Project 2"></a>
+                    <h3>Real Madrid CF</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur 
+                        exercitationem nisi enim natus unde dolores voluptas nemo placeat 
+                        consequuntur vitae iusto mollitia hic provident atque, id voluptate facere 
+                        quaerat maiores.</p>
+                </div>
+                <div class="grid-item wordpress">
+                    <a href="https://eliarowp.lionlink.org/">
+                    <img src="Images/Startup Lions.png" alt="Project 3"></a>
+                    <h3>Startup Lions Hospitality</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est alias cupiditate 
+                        architecto! Aspernatur, in nihil ab sint eveniet distinctio cum, reprehenderit 
+                        quisquam enim natus placeat obcaecati voluptatum dolorum! Odit, commodi.</p>
+                </div>
+                <div class="grid-item code">
+                    <a href="https://enockmasakhwe.github.io/bootcamp_class/">
+                    <img src="Images/Bootcamp class.png" alt="Project 4"></a>
+                    <h3>Learning Lions Bootcamp 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eveniet debitis 
+                        sit eaque at obcaecati, reprehenderit officia maiores quo doloremque quibusdam 
+                        expedita ratione et totam temporibus quasi nihil voluptatem labore!</p>
+                </div>
+                <div class="grid-item wordpress">
+                    <a href="https://enock.hotelateker.com/">
+                    <img src="Images/Enock's shop.png" alt="Project 3"></a>
+                    <h3>Enock's Electricals and Electronics</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est alias cupiditate 
+                        architecto! Aspernatur, in nihil ab sint eveniet distinctio cum, reprehenderit 
+                        quisquam enim natus placeat obcaecati voluptatum dolorum! Odit, commodi.</p>
+                </div>
+                <div class="grid-item code">
+                    <img src="path/to/your/project-image.jpg" alt="Project 1">
+                    <h3>My Portfolio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae 
+                        eligendi iusto eveniet nobis, aperiam sapiente soluta laborum laboriosam 
+                      quasi quod atque, eaque doloribus officiis corporis necessitatibus placeat. 
+                      Libero, aspernatur!</p>
+                </div>
+                <div class="grid-item wordpress">
+                    <img src="path/to/your/project-image.jpg" alt="Project 1">
+                    <h3>Kenyan Organic Tea Company</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae 
+                        eligendi iusto eveniet nobis, aperiam sapiente soluta laborum laboriosam 
+                      quasi quod atque, eaque doloribus officiis corporis necessitatibus placeat. 
+                      Libero, aspernatur!</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

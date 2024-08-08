@@ -1,0 +1,410 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    background-color: #000;
+    padding: 50px 0;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    text-align: center;
+
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #FFC300;
+}
+
+.nav-link.active {
+    color: #FFC300;
+}
+
+/* Home Section */
+.home-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#home {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container .header-title {
+    padding-bottom: 120px;
+    color: #FFC300 ;
+    font-size: 7em;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.home-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container h1, .text-container h2 {
+    margin: 0;
+}
+
+.text-container h1 {
+    color: #FFC300;
+    font-size: 4em;
+    white-space: nowrap;
+}
+
+.text-container h2 {
+    color:#ffffff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    color: #CCCCCC;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.text-container .home-btn {
+    padding: 10px 20px;
+    background-color: #FFC300;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.6em;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.text-container .home-btn:hover {
+    background-color: #e0a800;
+}
+
+
+
+/* About Section Layout */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.about-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-container h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #FFC300;
+}
+
+.about-container h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #FFC300;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ensure each section takes up 50% of the width of the flex-container */
+.flex-item {
+    flex: 1 1 45%;
+    min-width: 250px;
+}
+
+/* Personal Info */
+.personal-info, .skills, .education, .certificates {
+    box-sizing: border-box;
+}
+
+/* Personal Info */
+.personal-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.personal-info ul li {
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.about-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FFC300;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+    left: 34%;
+
+
+}
+
+.about-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Skills Section */
+.skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skills .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.progress-circle {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #FFC300;
+    margin-top: 10px;
+}
+
+.progress-circle .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Education Section */
+#education p {
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    
+}
+
+/* Certificates Section */
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+.certificate-grid img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+/* Portfolio Page Styles */
+#portfolio {
+    text-align: center;
+}
+
+.portfolio-container h1 {
+    margin-top: 150px;
+    font-size: 3em;
+    color:#FFC300;
+}
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-buttons .pbtn {
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.6em;
+    font-weight: bold;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+
+}
+
+.grid-item {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-item h3 {
+    margin: 10px 0 5px;
+    color: #FFC300;
+    font-size: 1.6em;
+}
+
+.grid-item p {
+    color: #CCCCCC;
+    font-size: 1.2em;
+}
+
+
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    width: 40%;
+    height: 3vh;
+    font-size: 1.6em;
+}
+
+form button {
+    padding: 10px;
+    background-color: #FFC300;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.contact-btn {
+    font-size: 1.6em;
+    margin-top:30px;
+}
+
+.contact-container h1{
+    font-size: 3em;
+    padding-top: 100px;;
+    color:#FFC300;
+    text-align:center;
+
+}
+
+.contact-container p{
+    font-size: 1.6em;
+    padding-top: 30px;
+    color:#fff;
+    text-align:center;
+
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.social-media-icons img {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0.5px;
+    cursor: pointer;
+    gap: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+}
